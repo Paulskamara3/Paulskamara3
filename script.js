@@ -1,23 +1,23 @@
 // Example JavaScript functionality for Learn More button
-document.querySelector('.learn-more').addEventListener('click', function(event) {
+document.querySelector('.learn-more').addEventListener('click', function (event) {
     event.preventDefault();
     alert('Learn more about Paul-Lu Samuel Kamara and his work!');
 });
 
 // Example JavaScript functionality for Read More buttons
-document.querySelectorAll('.read-more').forEach(function(button) {
-    button.addEventListener('click', function(event) {
+document.querySelectorAll('.read-more').forEach(function (button) {
+    button.addEventListener('click', function (event) {
         event.preventDefault();
         alert('Read more about this section!');
     });
 });
 
 // Example JavaScript functionality for Subscribe form
-document.querySelector('.btn').addEventListener('click', function(event) {
+document.querySelector('.btn').addEventListener('click', function (event) {
     event.preventDefault();
     const emailInput = document.querySelector('input[type="email"]');
     const email = emailInput.value.trim();
-    
+
     // Simple email validation
     if (isValidEmail(email)) {
         alert(`Subscribed with email: ${email}`);
